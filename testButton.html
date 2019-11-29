@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a id="clickMe1">点我1</a>
+    <span id="showNum1"></span>
+    <a id="clickMe2">点我2</a>
+    <span id="showNum2"></span>
+    <script>
+        let btn1 = document.getElementById('clickMe1'), btn2 = document.getElementById('clickMe2');
+        let i = 0, showNum1 = document.getElementById('showNum1'), j = 0, showNum2 = document.getElementById('showNum2');
+        btn1.onclick = function(){
+            i++;
+            showNum1.innerHTML = i;
+        };
+        btn2.onclick = function(){
+            j++;
+            showNum2.innerHTML = i;
+        };
+    </script>
+</body>
+</html>
